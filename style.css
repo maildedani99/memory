@@ -1,0 +1,40 @@
+
+.card{
+    padding: 1rem;
+}
+
+
+.carta-box {
+    margin: auto;
+    width: 150px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+
+  }
+
+  img{
+      border-radius: 10px;
+  }
+
+ /*  .carta-box:hover .carta {
+      transform: rotateY(180deg);
+  } */
+
+  .carta {
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+    border-radius: 15px;
+  }
+
+  .cara {
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: gray;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(212,212,212,1) 0%, rgba(194,194,194,1) 0%, rgba(237,237,237,1) 100%); 
+  }
+
+  .cara.detras {
+    transform: rotateY(180deg);
+  }

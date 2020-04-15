@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+
+<!-- <link rel="stylesheet" type="text/css" href="memory.css"> -->
+
+    <title>Memory Cars by: PROWEB 21</title>
+</head>
+
+
+<body id="body1">
+
+    <h3>Esta en version beta</h3>
+
+
+    <div class="container mt-5">
+        <h3 id="mensajes" class="mx-auto"> </h3>
+
+        <!--   Primera fila de cartas -->
+        <div class="container-flex mt-5   row">
+            <div class="carta-box col-2-sm col-2-md col-2-lg">
+                <div id="carta1" class="carta" onclick="girar('carta1', '1')">    
+                    <div class="cara">
+                        <img src="img/carta.png" width="150px" height="200px">
+                    </div>
+                    <div class="cara detras">
+                        <img src="" id="1" class="img1"  width="150px" height="200px">
+                    </div>    
+                </div>
+            </div>
+
+            <div class="carta-box col-2-sm col-2-md col-2-lg">
+                <div id="carta2" class="carta" onclick="girar('carta2', '2')">    
+                    <div class="cara">
+                        <img src="img/carta.png" width="150px" height="200px">
+                    </div>
+                    <div class="cara detras">
+                        <img src="" id="2" class="img1" width="150px" height="200px">
+                    </div>    
+                </div>
+            </div>
+
+            <div class="carta-box col-2-sm col-2-md col-2-lg">
+                <div id="carta3" class="carta" onclick="girar('carta3', '3')">    
+                    <div class="cara">
+                        <img src="img/carta.png"  width="150px" height="200px">
+                    </div>
+                    <div class="cara detras">
+                        <img src="" id="3" class="img1" width="150px" height="200px">
+                    </div>    
+                </div>
+            </div>
+
+            <div class="carta-box col-2-sm col-2-md col-2-lg">
+                <div id="carta4" class="carta" onclick="girar('carta4', '4')">    
+                    <div class="cara">
+                        <img src="img/carta.png" width="150px" height="200px">
+                    </div>
+                    <div class="cara detras">
+                        <img src="" id="4" class="img1" width="150px" height="200px">
+                    </div>    
+                </div>
+            </div>
+
+            <div class="carta-box col-2-sm col-2-md col-2-lg">
+                <div id="carta5" class="carta" onclick="girar('carta5', '5')">    
+                    <div class="cara">
+                        <img src="img/carta.png" width="150px" height="200px">
+                    </div>
+                    <div class="cara detras">
+                        <img src="" id="5" class="img1" width="150px" height="200px">
+                    </div>    
+                </div>
+            </div>
+
+            <div class="carta-box col-2-sm col-2-md col-2-lg">
+                <div id="carta6" class="carta" onclick="girar('carta6', '6')">    
+                    <div class="cara">
+                <img src="img/carta.png" width="150px" height="200px">
+            </div>
+            <div class="cara detras">
+                <img src="" id="6" class="img1" width="150px" height="200px">
+            </div>    
+        </div>
+    </div>
+</div>
+
+    <!-- Segunda fila de cartas -->
+
+    <div class="container-flex  mt-5  row">
+        <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div id="carta7" class="carta" onclick="girar('carta7', '7')">    
+                <div class="cara">
+                    <img src="img/carta.png" width="150px" height="200px">
+                </div>
+                <div class="cara detras">
+                    <img src="" id="7" class="img1" width="150px" height="200px">
+                </div>    
+            </div>
+        </div>
+
+        <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div id="carta8" class="carta" onclick="girar('carta8', '8')">    
+                <div class="cara">
+                    <img src="img/carta.png" width="150px" height="200px">
+                </div>
+                <div class="cara detras">
+                    <img src="" id="8" class="img1" width="150px" height="200px">
+                </div>    
+            </div>  
+        </div>
+
+        <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div id="carta9" class="carta" onclick="girar('carta9', '9')">    
+                <div class="cara">
+                    <img src="img/carta.png" width="150px" height="200px">
+                </div>
+                <div class="cara detras">
+                    <img src="" id="9" class="img1" width="150px" height="200px">
+                </div>    
+            </div>
+        </div>
+
+        <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div id="carta10" class="carta" onclick="girar('carta10', '10')">    
+                <div class="cara">
+                    <img src="img/carta.png" width="150px" height="200px">
+                </div>
+                <div class="cara detras">
+                    <img src="" id="10" class="img1" width="150px" height="200px">
+                </div>    
+            </div>
+        </div>
+
+        <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div id="carta11" class="carta" onclick="girar('carta11', '11')">    
+                <div class="cara">
+                    <img src="img/carta.png" width="150px" height="200px">
+                </div>
+                <div class="cara detras">
+                    <img src="" id="11" class="img1" width="150px" height="200px">
+                </div>    
+            </div>
+        </div>
+
+        <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div id="carta12" class="carta" onclick="girar('carta12', '12')">    
+                <div class="cara">
+                    <img src="img/carta.png" width="150px" height="200px">
+                </div>
+                <div class="cara detras">
+                    <img src="" id="12" class="img1" width="150px" height="200px">
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <!-- Terceera fila catas -->
+
+    <div class="container-flex  mt-5  row">
+        <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div id="carta13" class="carta" onclick="girar('carta13', '13')">    
+                <div class="cara">
+                    <img src="img/carta.png" width="150px" height="200px">
+                </div>
+                <div class="cara detras">
+                    <img src="" id="13" class="img1" width="150px" height="200px">
+                </div>    
+            </div>
+        </div>
+
+        <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div id="carta14" class="carta" onclick="girar('carta14', '14')">    
+                <div class="cara">
+                    <img src="img/carta.png" width="150px" height="200px">
+                </div>
+                <div class="cara detras">
+                    <img src="" id="14" class="img1" width="150px" height="200px">
+                </div>    
+            </div>
+        </div>
+
+        <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div id="carta15" class="carta" onclick="girar('carta15', '15')">    
+                <div class="cara">
+                    <img src="img/carta.png" width="150px" height="200px">
+                </div>
+                <div class="cara detras">
+                    <img src="" id="15" class="img1" width="150px" height="200px">
+                </div>    
+            </div>
+        </div>
+
+        <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div id="carta16" class="carta" onclick="girar('carta16', '16')">    
+                <div class="cara">
+                    <img src="img/carta.png" width="150px" height="200px">
+                </div>
+                <div class="cara detras">
+                    <img src="" id="16" class="img1" width="150px" height="200px">
+                </div>    
+            </div>
+        </div>
+
+        <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div id="carta17" class="carta" onclick="girar('carta17', '17')">    
+                <div class="cara">
+                    <img src="img/carta.png" width="150px" height="200px">
+                </div>
+                <div class="cara detras">
+                    <img src="" id="17" class="img1" width="150px" height="200px">
+                </div>    
+            </div>
+        </div>
+
+        <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div id="carta18" class="carta" onclick="girar('carta18', '18')">    
+                <div class="cara">
+                    <img src="img/carta.png" width="150px" height="200px">
+                </div>
+                <div class="cara detras">
+                    <img src="" id="18" class="img1" width="150px" height="200px">
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- Funciones JS propias  -->
+    <script src="memory.js"></script>
+</body>
+</html> 
+ 

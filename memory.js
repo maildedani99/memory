@@ -149,7 +149,7 @@ function repartir(){
         idCarta = posiciones[n];
         console.log(idCarta);                                                   
         cartaN = document.getElementById(idCarta);
-        cartaN.src = (foto);
+        cartaN.src = foto;
         i++;
         n++;
     }while (i < 18);
@@ -180,5 +180,5 @@ function aleatorio(){
     }
 
     
-
+inicio();
 
