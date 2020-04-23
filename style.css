@@ -1,4 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+
+*{
+  font-family: 'Source Code Pro', monospace;
+}
+
 .card{
     padding: 1rem;
 }
@@ -32,9 +39,25 @@
     backface-visibility: hidden;
     background-color: gray;
     border-radius: 10px;
-    background: linear-gradient(to right, rgba(212,212,212,1) 0%, rgba(194,194,194,1) 0%, rgba(237,237,237,1) 100%); 
+    background: #eded99;
   }
 
   .cara.detras {
     transform: rotateY(180deg);
+  }
+
+  .seccion0 {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .seccion {
+    padding: 2rem 5rem;
+    background-color: #c0d092;
+    background-image: url("img/texturaverde.jpg");
+  }
+
+  .seccion2 {
+    padding: 2rem ;
+    background-color: #eded99;
   }
