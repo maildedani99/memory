@@ -57,9 +57,12 @@ function girar(cartaN, imgN) {
     }
     
     cartaSel = document.getElementById(cartaN);
-    console.log(cartaN, cartaSel);
     imgSel = document.getElementById(imgN).src;
     cartaSel.style.cssText = "transform: rotateY(180deg);transform-style: preserve-3d; transition: all 0.3s linear;";
+    if (primerGiro == false && cartaGirada1 == cartaSel) {
+        giros--;
+        return;
+    }
     if (primerGiro == true){
         cartaGirada1 = cartaSel;
         imgGirada1 = imgSel;
@@ -94,6 +97,8 @@ function girar2(cartaGirada1, cartaGirada2 ){
 
     parejas++;
      if (parejas == 9) {
+         
+         
          let resultado = (parejas / giros * 1000);
          resultado = Math.round(resultado);
          puntos1 = document.getElementById("puntos");
@@ -101,7 +106,7 @@ function girar2(cartaGirada1, cartaGirada2 ){
          
          var info = document.getElementById('info');
          info.innerHTML = "Enhorabuena!!  has conseguido las 9 parejas con un total de "+resultado+" puntos.";
-        
+         
         //setTimeout('alert("Enhorabuena!! Has conseguido las todas las parejas)',1500);
     }else{
         parejas1 = document.getElementById('parejas');
@@ -128,7 +133,9 @@ function repartir(){
         n++;
     }while (i < 18);
     cartaDos = false;
-    alert("Puedes empezar...");
+    
+    
+
 }
 
 /*La funcion aleatorio devuelve un array de 18 elementos (numeros enteros)
@@ -143,16 +150,20 @@ function aleatorio(){
         if (x < 19   &&   coinciden == false) {
             posiciones.push(x);
         }
-    }while (posiciones.length < 18);
+    } while (posiciones.length < 18);
+    console.log(posiciones);
     return posiciones;
 }
 
-function inicio() {
-    init = true;
+init = true;
     giros = 0;
 
     aleatorio();
     repartir();
+
+function inicio() {
+    location.reload();
+   
 }
 
 
