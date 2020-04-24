@@ -1,63 +1,199 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
+@media only screen and (min-width: 375px) { 
+  *body {
+        width: 100vw;
+        height: 100vh;  
+       }
+  .p1 {
+      font-size: 1.3rem;
+      text-align: center;
+  }
+  .p2 {
+      font-size: 0.7rem;
+      text-align: center;
+  }
+  .p3 {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  
+    .card{
+        padding: 1rem;
+    }
+    .carta-box {
+        margin: auto;
+        width: 9.4em;
+        min-height: 3em;
+        position: relative;
+        perspective: 1000px;
+      }
+    img{
+          border-radius: 10px;
+      }
+      .carta {
+        transform-style: preserve-3d;
+        transition: all 0.5s linear;
+        border-radius: 0.9em;
+      }
+      .cara {
+        position: absolute;
+        backface-visibility: hidden;
+        background-color: gray;
+        border-radius: 0.9em;
+        background: #eded99;
+      }
+      .cara.detras {
+        transform: rotateY(180deg);
+      }
+      .seccion0 {
+        width: 100vw;
+        height: 100vh;
+      }
+      .seccion {
+        padding: 1rem;
+        
+        background-color: #c0d092;
+        background-image: url("img/texturaverde.jpg");
+      }
+      .seccion2 { /*  zona contadores  */
+        max-height: 100vh;
+        padding: 0.5rem ;
+        background-color: #eded99;
+      }
+      #logo {
+        padding: 0.4rem;
+      }
+  }
 
-*{
-  font-family: 'Source Code Pro', monospace;
+@media only screen and (min-width: 768px) { 
+  *body {font-size: 0.2em;
+        width: 100vw;
+        height: 100vh;  
+       }
+       .carta-box{
+        min-height: 5em;
+      }
+     
 }
 
+@media only screen and (min-width: 1024px) { 
+  *body {font-size: 0.2em;
+    width: 100vw;
+    height: 100vh;
+  }
+  .carta-box{
+    min-height: 8em;
+  }
+ 
+   }
+
+@media only screen and (min-width: 1200px) {
+    *body {font-size: 0.2em;
+      width: 100vw;
+      height: 100vh;  
+    }
+    .carta-box{
+      min-height: 12.5em;
+    }
+    *{
+      font-family: 'Source Code Pro', monospace;
+    }
+    .card{
+        padding: 1rem;
+    }
+    
+    .carta-box {
+        margin: auto;
+        width: 9.4em;
+        position: relative;
+        perspective: 1000px;
+      }
+      img{
+          border-radius: 10px;
+      }
+      .carta {
+        transform-style: preserve-3d;
+        transition: all 0.5s linear;
+        border-radius: 0.9em;
+      }
+      .cara {
+        position: absolute;
+        backface-visibility: hidden;
+        background-color: gray;
+        border-radius: 0.9em;
+        background: #eded99;
+      }
+      .cara.detras {
+        transform: rotateY(180deg);
+      }
+      .seccion0 {
+        width: 100vw;
+        height: 100vh;
+      }
+      .seccion {
+        padding: 2rem 5rem;
+        background-color: #c0d092;
+        background-image: url("img/texturaverde.jpg");
+      }
+      .seccion2 {
+        max-height: 100vh;
+        padding: 2rem ;
+        background-color: #eded99;
+      }
+
+ }
+
+/* h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; } */ 
+
+/* *{
+  font-family: 'Source Code Pro', monospace;
+}
 .card{
     padding: 1rem;
 }
 
-
 .carta-box {
     margin: auto;
-    width: 150px;
-    height: 200px;
+    width: 9.4em;
     position: relative;
     perspective: 1000px;
-
   }
-
   img{
       border-radius: 10px;
   }
-
- /*  .carta-box:hover .carta {
-      transform: rotateY(180deg);
-  } */
-
   .carta {
     transform-style: preserve-3d;
     transition: all 0.5s linear;
-    border-radius: 15px;
+    border-radius: 0.9em;
   }
-
   .cara {
     position: absolute;
     backface-visibility: hidden;
     background-color: gray;
-    border-radius: 10px;
+    border-radius: 0.9em;
     background: #eded99;
   }
-
   .cara.detras {
     transform: rotateY(180deg);
   }
-
   .seccion0 {
     width: 100vw;
     height: 100vh;
   }
-
   .seccion {
     padding: 2rem 5rem;
     background-color: #c0d092;
     background-image: url("img/texturaverde.jpg");
   }
-
   .seccion2 {
+    max-height: 100vh;
     padding: 2rem ;
     background-color: #eded99;
-  }
+  } */

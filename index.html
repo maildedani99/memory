@@ -22,97 +22,94 @@
         
         <div  class=" seccion2 jumbotron col-2 ">
             <div class="text-center">
-                <h2>Menory Cards</h2>
-                <h4>by:</h4>
-                <img src="img/logonegro.png" class="img-fluid" alt="Logo">
+                <!-- <img src="img/logonegro.png"  id="logo" class="img-fluid" alt="Logo"> -->
+                <p class="p1 mx-auto">Menory Cards</p>
                 <hr>
             </div>
-            <div class="mt-5">
+            <div class="text-center">
 
-                <h3 id="giros" >Giros: ---</h3>
-                <br>
-                <h3 id="parejas">Parejas: ---</h3>
-                <br>
-                <h3 id="puntos">Puntos: ---</h3>
-                <br>
-                <button id="button1" class="btn btn-success btn-lg" onclick="inicio();">Iniciar Juego</button>
+                <p id="giros" class="p2" >Giros: ---</p>
+                <p id="parejas" class="p2">Parejas: ---</p>
+                <p id="puntos" class="p2">Puntos: ---</p>
+               
+                <button id="button1" class="btn btn-success btn-sm " onclick="inicio();">Reiniciar</button>
                 <hr>
-                <div class="mt-5">
-                    <h5 class="text-center" id="info">Gira las tarjetas de dos en dos y encuentra todas las parejas con los minimos giros posibles...</h5>
+                <div class="mt-3">
+                    <p class="text-center p3" id="info">Gira las tarjetas de dos en dos y encuentra todas las parejas con los minimos giros posibles...</p>
                </div>
             </div>
 
             
         </div>
         <div class="seccion jumbotron col-10">
-            <div class="container mt-5">
+            <div class="container mt-2">
 
-        <h3 id="mensajes" class="mx-auto"> </h3>
+        <p id="mensajes" class="mx-auto"> </p>
 
         <!--   Primera fila de cartas -->
-        <div class="container-flex mt-5   row">
-            <div class="carta-box col-2-sm col-2-md col-2-lg">
+        <div class="container-flex  mt-0   row">
+            <div class="carta-box col-2">
                 <div id="carta1" class="carta" onclick="girar('carta1', '1')">    
                     <div class="cara">
-                        <img src="img/inter.png" width="150px" height="200px">
+                        <img src="img/inter.png" class="img-fluid"  >
                     </div>
                     <div class="cara detras">
-                        <img src="" id="1" class="img1"  width="150px" height="200px">
+                        <img src="" id="1" class="img1 img-fluid"   >
                     </div>    
                 </div>
             </div>
 
-            <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div class="carta-box col-2">
                 <div id="carta2" class="carta" onclick="girar('carta2', '2')">    
                     <div class="cara">
-                        <img src="img/inter.png" width="150px" height="200px">
+                        <img src="img/inter.png" class="img-fluid" >
                     </div>
                     <div class="cara detras">
-                        <img src="" id="2" class="img1" width="150px" height="200px">
+                        <img src="" id="2" class="img1 img-fluid"  >
                     </div>    
                 </div>
             </div>
 
-            <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div class="carta-box col-2">
                 <div id="carta3" class="carta" onclick="girar('carta3', '3')">    
                     <div class="cara">
-                        <img src="img/inter.png"  width="150px" height="200px">
+                        <img src="img/inter.png"  class="img-fluid" >
                     </div>
                     <div class="cara detras">
-                        <img src="" id="3" class="img1" width="150px" height="200px">
+                        <img src="" id="3" class="img1 img-fluid"  >
                     </div>    
                 </div>
             </div>
 
-            <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div class="carta-box col-2">
                 <div id="carta4" class="carta" onclick="girar('carta4', '4')">    
                     <div class="cara">
-                        <img src="img/inter.png" width="150px" height="200px">
+                        <img src="img/inter.png" class="img-fluid" >
                     </div>
                     <div class="cara detras">
-                        <img src="" id="4" class="img1" width="150px" height="200px">
+                        <img src="" id="4" class="img1 img-fluid"  >
                     </div>    
                 </div>
             </div>
 
-            <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div class="carta-box col-2">
                 <div id="carta5" class="carta" onclick="girar('carta5', '5')">    
                     <div class="cara">
-                        <img src="img/inter.png" width="150px" height="200px">
+                        <img src="img/inter.png" class="img-fluid" >
                     </div>
                     <div class="cara detras">
-                        <img src="" id="5" class="img1" width="150px" height="200px">
+                        <img src="" id="5" class="img1 img-fluid"  >
                     </div>    
                 </div>
             </div>
 
-            <div class="carta-box col-2-sm col-2-md col-2-lg">
+            <div class="carta-box col-2">
                 <div id="carta6" class="carta" onclick="girar('carta6', '6')">    
                     <div class="cara">
-                <img src="img/inter.png" width="150px" height="200px">
+                <img src="img/inter.png" class="img-fluid"  >
             </div>
             <div class="cara detras">
-                <img src="" id="6" class="img1" width="150px" height="200px">
+                <img src="" id="6" class="img1 img-fluid"  >
             </div>    
         </div>
     </div>
@@ -120,69 +117,69 @@
 
     <!-- Segunda fila de cartas -->
 
-    <div class="container-flex  mt-5  row">
-        <div class="carta-box col-2-sm col-2-md col-2-lg">
+    <div class="container-flex mt-5  row">
+        <div class="carta-box col-2">
             <div id="carta7" class="carta" onclick="girar('carta7', '7')">    
                 <div class="cara">
-                    <img src="img/inter.png" width="150px" height="200px">
+                    <img src="img/inter.png" class="img-fluid"  >
                 </div>
                 <div class="cara detras">
-                    <img src="" id="7" class="img1" width="150px" height="200px">
+                    <img src="" id="7" class="img1 img-fluid"  >
                 </div>    
             </div>
         </div>
 
-        <div class="carta-box col-2-sm col-2-md col-2-lg">
+        <div class="carta-box col-2">
             <div id="carta8" class="carta" onclick="girar('carta8', '8')">    
                 <div class="cara">
-                    <img src="img/inter.png" width="150px" height="200px">
+                    <img src="img/inter.png" class="img-fluid"  >
                 </div>
                 <div class="cara detras">
-                    <img src="" id="8" class="img1" width="150px" height="200px">
+                    <img src="" id="8" class="img1 img-fluid"  >
                 </div>    
             </div>  
         </div>
 
-        <div class="carta-box col-2-sm col-2-md col-2-lg">
+        <div class="carta-box col-2">
             <div id="carta9" class="carta" onclick="girar('carta9', '9')">    
                 <div class="cara">
-                    <img src="img/inter.png" width="150px" height="200px">
+                    <img src="img/inter.png" class="img-fluid"  >
                 </div>
                 <div class="cara detras">
-                    <img src="" id="9" class="img1" width="150px" height="200px">
+                    <img src="" id="9" class="img1 img-fluid"  >
                 </div>    
             </div>
         </div>
 
-        <div class="carta-box col-2-sm col-2-md col-2-lg">
+        <div class="carta-box col-2">
             <div id="carta10" class="carta" onclick="girar('carta10', '10')">    
                 <div class="cara">
-                    <img src="img/inter.png" width="150px" height="200px">
+                    <img src="img/inter.png" class="img-fluid"  >
                 </div>
                 <div class="cara detras">
-                    <img src="" id="10" class="img1" width="150px" height="200px">
+                    <img src="" id="10" class="img1 img-fluid"  >
                 </div>    
             </div>
         </div>
 
-        <div class="carta-box col-2-sm col-2-md col-2-lg">
+        <div class="carta-box col-2">
             <div id="carta11" class="carta" onclick="girar('carta11', '11')">    
                 <div class="cara">
-                    <img src="img/inter.png" width="150px" height="200px">
+                    <img src="img/inter.png" class="img-fluid"  >
                 </div>
                 <div class="cara detras">
-                    <img src="" id="11" class="img1" width="150px" height="200px">
+                    <img src="" id="11" class="img1 img-fluid"  >
                 </div>    
             </div>
         </div>
 
-        <div class="carta-box col-2-sm col-2-md col-2-lg">
+        <div class="carta-box col-2">
             <div id="carta12" class="carta" onclick="girar('carta12', '12')">    
                 <div class="cara">
-                    <img src="img/inter.png" width="150px" height="200px">
+                    <img src="img/inter.png" class="img-fluid"  >
                 </div>
                 <div class="cara detras">
-                    <img src="" id="12" class="img1" width="150px" height="200px">
+                    <img src="" id="12" class="img1 img-fluid"  >
                 </div>    
             </div>
         </div>
@@ -191,68 +188,68 @@
     <!-- Terceera fila catas -->
 
     <div class="container-flex  mt-5  row">
-        <div class="carta-box col-2-sm col-2-md col-2-lg">
+        <div class="carta-box col-2">
             <div id="carta13" class="carta" onclick="girar('carta13', '13')">    
                 <div class="cara">
-                    <img src="img/inter.png" width="150px" height="200px">
+                    <img src="img/inter.png" class="img-fluid"  >
                 </div>
                 <div class="cara detras">
-                    <img src="" id="13" class="img1" width="150px" height="200px">
+                    <img src="" id="13" class="img1 img-fluid"  >
                 </div>    
             </div>
         </div>
 
-        <div class="carta-box col-2-sm col-2-md col-2-lg">
+        <div class="carta-box col-2">
             <div id="carta14" class="carta" onclick="girar('carta14', '14')">    
                 <div class="cara">
-                    <img src="img/inter.png" width="150px" height="200px">
+                    <img src="img/inter.png" class="img-fluid"  >
                 </div>
                 <div class="cara detras">
-                    <img src="" id="14" class="img1" width="150px" height="200px">
+                    <img src="" id="14" class="img1 img-fluid"  >
                 </div>    
             </div>
         </div>
 
-        <div class="carta-box col-2-sm col-2-md col-2-lg">
+        <div class="carta-box col-2">
             <div id="carta15" class="carta" onclick="girar('carta15', '15')">    
                 <div class="cara">
-                    <img src="img/inter.png" width="150px" height="200px">
+                    <img src="img/inter.png" class="img-fluid"  >
                 </div>
                 <div class="cara detras">
-                    <img src="" id="15" class="img1" width="150px" height="200px">
+                    <img src="" id="15" class="img1 img-fluid"  >
                 </div>    
             </div>
         </div>
 
-        <div class="carta-box col-2-sm col-2-md col-2-lg">
+        <div class="carta-box col-2">
             <div id="carta16" class="carta" onclick="girar('carta16', '16')">    
                 <div class="cara">
-                    <img src="img/inter.png" width="150px" height="200px">
+                    <img src="img/inter.png" class="img-fluid"  >
                 </div>
                 <div class="cara detras">
-                    <img src="" id="16" class="img1" width="150px" height="200px">
+                    <img src="" id="16" class="img1 img-fluid"  >
                 </div>    
             </div>
         </div>
 
-        <div class="carta-box col-2-sm col-2-md col-2-lg">
+        <div class="carta-box col-2">
             <div id="carta17" class="carta" onclick="girar('carta17', '17')">    
                 <div class="cara">
-                    <img src="img/inter.png" width="150px" height="200px">
+                    <img src="img/inter.png" class="img-fluid"  >
                 </div>
                 <div class="cara detras">
-                    <img src="" id="17" class="img1" width="150px" height="200px">
+                    <img src="" id="17" class="img1 img-fluid"  >
                 </div>    
             </div>
         </div>
 
-        <div class="carta-box col-2-sm col-2-md col-2-lg">
+        <div class="carta-box col-2">
             <div id="carta18" class="carta" onclick="girar('carta18', '18')">    
                 <div class="cara">
-                    <img src="img/inter.png" width="150px" height="200px">
+                    <img src="img/inter.png" class="img-fluid"  >
                 </div>
                 <div class="cara detras">
-                    <img src="" id="18" class="img1" width="150px" height="200px">
+                    <img src="" id="18" class="img1 img-fluid"  >
                 </div>    
             </div>
         </div>
