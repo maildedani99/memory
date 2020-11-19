@@ -1,2 +1,4 @@
 # memory
-Memory card game with animals
+Memory card game with animals    
+
+HTML / CSS / JS
